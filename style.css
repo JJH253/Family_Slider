@@ -1,21 +1,23 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   body {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
   }
 
   .slider-container {
     padding: 20px 0;
     justify-content: flex-start;
+    overflow-x: auto;
   }
 
   .slider-images {
+    display: flex;
+    align-items: center;
     gap: 8px;
-    padding: 0 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    padding: 0 15px;
     width: max-content;
+    min-width: 100%;
   }
 
   .slider-images::-webkit-scrollbar {
@@ -25,35 +27,45 @@
   .slider-img {
     width: 50px;
     min-width: 50px;
-    height: 320px;
-  }
-
-  .slider-img h1 {
-    font-size: 18px;
-    left: -32px;
-    bottom: 60px;
+    height: 300px;
+    border-radius: 20px;
   }
 
   .slider-img.active {
-    width: 180px;
-    min-width: 180px;
-    height: 360px;
+    width: 170px;
+    min-width: 170px;
+    height: 340px;
+  }
+
+  .slider-img h1 {
+    font-size: 16px;
+    left: -28px;
+    bottom: 55px;
   }
 
   .details {
-    left: 15px;
-    bottom: 18px;
+    left: 12px;
+    bottom: 15px;
   }
 
   .details h2 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 
   .details p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .line {
-    width: 60px;
+    height: 2px;
+    margin-bottom: 8px;
+  }
+
+  .glow-ring {
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
   }
 }
